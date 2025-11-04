@@ -1,10 +1,11 @@
 ---
 layout: layout.liquid
 title: Home
+permalink: /index.html
 ---
 
 <h1>Everyday Items</strong></h1>
-<p>These are the three items I absolutely cannot leave home without. They are a reflection of necessity, preparedness, and comfort.</p>
+<p>These are the three items I absolutely cannot leave home without.</p>
 
 <main>
     <ul>
