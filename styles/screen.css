@@ -1,50 +1,104 @@
-body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
-}
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
+*, *::before, *::after {
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+/* 2. Body/Primary Background */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    background-color: #a38d8d;
+    color: #343A40; 
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+/* 3. Header/Footer Background (Deep Burgundy Accent) */
+header, footer {
+    background-color: #800020; 
+    color: rgb(170, 156, 111);
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); 
 }
 
+/* 4. Main Headings (H1 in Header) */
 h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(170, 156, 111);); /* Title remains white */
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* 5. Navigation Links */
+nav a {
+    color: #d0c3c3; 
+    text-decoration: none;
+    margin: 0 25px; 
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 0.85rem;
+    transition: color 0.2s;
 }
 
-img.about {
-    opacity: 0.5;
+/* 6. Navigation Link Hover Effect */
+nav a:hover {
+    color: #FFD700; 
+}
+
+/* 7. Main Content Container */
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #EAEAEA; /* Soft Gray */
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* 8. Item Headings (H2) */
+h2 {
+    color: #343A40; /* Dark Charcoal */
+    border-bottom: 2px solid #800020; /* Burgundy underline */
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+/* 9. Image Styling  */
+.item-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+}
+
+/* 10. Footer Shortcode Content Styling */
+.contact-info {
+    padding-top: 5px;
+    font-style: italic;
+    color: #DDDDDD; 
+    font-size: 0.9rem;
+}
+
+/* 11. List Styling for Homepage */
+main ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+/* 12. Link Styling */
+main ul a {
+    color: #800020;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px dashed #CCCCCC;
+    transition: color 0.1s;
 }
